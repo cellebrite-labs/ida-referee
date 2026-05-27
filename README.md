@@ -15,7 +15,13 @@ It's much easier to reverse-engineer a structure when you can find every place i
 
 ## Installation
 
-Copy the plugin into the IDA "plugins" folder
+With [ida-setup](https://github.com/cellebrite-labs/ida-setup):
+
+```bash
+ida-setup plugin install -e /path/to/ida-referee
+```
+
+Or manually copy `referee.py` into the IDA plugins folder
 
 ## Usage
 

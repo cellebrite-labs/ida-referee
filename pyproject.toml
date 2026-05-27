@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=80", "wheel", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ida-referee"
+dynamic = ["version"]
+description = "IDA plugin that adds struct xref info from decompilation"
+license = "Apache-2.0"
+readme = "README.md"
+
+[project.entry-points."ida_plugins"]
+referee = "referee"
+
+[tool.setuptools]
+py-modules = ["referee"]
+
+[tool.setuptools_scm]
